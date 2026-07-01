@@ -137,16 +137,10 @@ What airport transfer options are available from Hurghada?
 Recommend a Red Sea activity for children.
 ```
 
-## Dense-only vs hybrid comparison
+## Dense-only vs Hybrid Retrieval Evaluation
 
-After building the indexes, run:
+The project includes an evaluation script that compares dense-only retrieval against hybrid retrieval, which combines semantic vector search with BM25 keyword search.
+The comparison was performed using multiple travel-related queries, including destination, tour, price, and transfer questions. The generated results are saved in:
+`evaluation/dense_vs_hybrid.md`
 
-```bash
-python -m src.evaluate_retrieval --output evaluation/dense_vs_hybrid.md
-```
 
-Then add your observations to the generated Markdown file.
-
-## Notes on academic integrity
-
-The core RAG code, retrieval logic, chunking, Gemini prompts, and hybrid search are written in this repository. AI help was used for project planning, code drafting, and documentation support. You should understand every file before submitting.
